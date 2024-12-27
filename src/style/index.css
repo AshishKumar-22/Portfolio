@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body{
+height: 100%;
+margin: 0%;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Space Grotesk", serif;
+}
+
+
+.bg-img{
+    background-image:url('../assets/bg-img5.png') ;
+}
+
+/* App.css */
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #01003d #ffffff;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #01003d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+  
+
+  /* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 138px;
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  background-color: rgb(22, 163, 74);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgb(18, 113, 53);
+  transition-duration: .3s;
+}
+
+.svg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn:active {
+  transform: translate(3px , 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
