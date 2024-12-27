@@ -45,7 +45,7 @@ export const PROJECTS = [
         description:
             "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
         image: projectImage11,
-        githubLink: "https://github.com/user/personal-portfolio",
+        githubLink: "",
     },
     // {
     //     id: 2,
@@ -63,22 +63,22 @@ export const PROJECTS = [
     //     image: projectImage3,
     //     githubLink: "https://github.com/user/task-management-tool",
     // },
-    {
-        id: 4,
-        name: "Weather App",
-        description:
-            "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-        image: projectImage4,
-        githubLink: "https://github.com/user/weather-app",
-    },
-    {
-        id: 5,
-        name: "Blog Platform",
-        description:
-            "A blogging platform developed with React.js and Use Api for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
-        image: projectImage5,
-        githubLink: "https://github.com/user/blog-platform",
-    },
+    // {
+    //     id: 4,
+    //     name: "Weather App",
+    //     description:
+    //         "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
+    //     image: projectImage4,
+    //     githubLink: "https://github.com/user/weather-app",
+    // },
+    // {
+    //     id: 5,
+    //     name: "Blog Platform",
+    //     description:
+    //         "A blogging platform developed with React.js and Use Api for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
+    //     image: projectImage5,
+    //     githubLink: "https://github.com/user/blog-platform",
+    // },
     // {
     //     id: 6,
     //     name: "Chat Application",

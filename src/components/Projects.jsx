@@ -1,9 +1,9 @@
 import React from 'react'
-import { PROJECTS } from '../Constants'
 import { MdArrowOutward } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { FaCode } from 'react-icons/fa';
 import { FaEye } from 'react-icons/fa';
+import { PROJECTS } from '../constants';
 
 
 const Projects = () => {
