@@ -14,7 +14,7 @@ import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 import projectImage7 from "../assets/project7.png";
-import resume_pdf from '../assets/Ashish-kumar_Resume.pdf'
+// import resume_pdf from '../assets/Ashish-kumar_Resume.pdf'
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -125,7 +125,7 @@ export const BIO = [
     "Currently, I'm focused on mastering Data Structures and Algorithms to enhance my problem-solving abilities and building scalable web applications. My approach to learning is hands-on—I believe in growing through practice and collaboration.",
     "Beyond coding, I thrive in team environments, sharing knowledge, and contributing to tech communities. My goal is to craft impactful digital experiences that not only meet user needs but also inspire innovation",
     <div className=" p-3 ">
-        <a href={resume_pdf} target="_blank" className="Btn bg-green-600 m-auto sm:m-0 rounded-full font-bold mb-6  ">
+        <a href='#' target="_blank" className="Btn bg-green-600 m-auto sm:m-0 rounded-full font-bold mb-6  ">
             <p className="w-full" rel="noreferrer">Resume <FaAngleRight className="svg bottom-2" /></p>
         </a>
 
@@ -138,7 +138,6 @@ export const BIO = [
 ];
 
 export const SKILLS = [
-
     // {
     //     icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
     //     name: "Next.js",
