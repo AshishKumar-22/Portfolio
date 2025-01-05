@@ -13,18 +13,18 @@ const Projects = () => {
             <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3  '>
                 {PROJECTS.map((project, index) => (
                     <motion.div initial={{ opacity: 0.9, }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} whileHover={{ scale: 1.05 }} key={project.id} className='border group relative overflow-hidden rounded-3xl lg:w-[390px] shrink h-60'>
-                        <motion.img whileHover={{scale:1.1}} src={project.image} alt={project.name} className='h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 ' />
-                        <motion.div initial={{opacity:0}} whileHover={{opacity:1}} transition={{duration:0.5 }} className='absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100'>
+                        <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }} src={project.image} alt={project.name} className='h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 ' />
+                        <motion.div initial={{ opacity: 0 }} whileHover={{ opacity: 1 }} whileTap={{ opacity: 1 }} transition={{ duration: 0.5 }} className='absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100'>
                             <h2 className='mb-2 text-xl '>{project.name}</h2>
                             <p className='mb-2 p-4 '>{project.description}</p>
-                            
-                            <a href={project.githubLink} target='_blank' rel='noopener noreferrer' className='rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300 '>
+
+                            <a href={project.githubLink} target='_blank' rel='noopener noreferrer' className=' rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300  sm:text-base'>
                                 <div className='flex items-center'>
-                                    <span>View </span><span>{'\u00A0'}</span> 
+                                    <span>View </span><span>{'\u00A0'}</span>
                                     <FaEye />
                                 </div>
                             </a>
-                      
+
                         </motion.div>
                     </motion.div>
                 ))}
