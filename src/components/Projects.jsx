@@ -10,9 +10,11 @@ const Projects = () => {
 
     const clickHandler = (e) => {
 
+      if(e.target.tagName == 'DIV'){
+
         e.target.classList.toggle('opacity-0')
         console.log(e.target.classList);
-    }
+      }}
 
     return (
         <section className='pt-16' id='projects'>
@@ -22,7 +24,7 @@ const Projects = () => {
                     <motion.div initial={{ opacity: 0.9, }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} whileHover={{ scale: 1.05 }} key={project.id} className='border group relative overflow-hidden rounded-3xl lg:w-[390px] shrink h-60'>
                         <motion.img whileHover={{ scale: 1.1 }} src={project.image} alt={project.name} className='h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 ' />
 
-                        <motion.div onClick={(e) => clickHandler(e)} whileHover={{ opacity: 1 }} transition={{ duration: 0.5 }} className={` absolute inset-0 flex flex-col items-center justify-center text-white opacity-0  backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100`}>
+                        <motion.div onClick={(e) => clickHandler(e)} whileHover={{ opacity: 1}} transition={{ duration: 0.5 }} className={` absolute inset-0 flex flex-col items-center justify-center text-white opacity-0  backdrop-blur-lg transition-opacity duration-500 `}>
                             <h2 className=' mb-2 text-xl '>{project.name}</h2>
                             <p className='mb-2 p-4 '>{project.description}</p>
 
