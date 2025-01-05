@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-import logoVideo from '../assets/logoVideo.mp4'
-import { NAVIGATION_LINKS } from '../Constants';
+import { NAVIGATION_LINKS } from '../constants';
 import { FaTimes } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa6';
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HERO, SOCIAL_MEDIA_LINKS } from '../Constants'
+import { HERO, SOCIAL_MEDIA_LINKS } from '../constants'
 import ashishKumar_Img from '../assets/ashish-img.png'
 import { motion } from 'framer-motion';
 

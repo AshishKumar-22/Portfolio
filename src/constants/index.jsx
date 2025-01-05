@@ -13,13 +13,17 @@ import projectImage3 from "../assets/project3.jpeg";
 import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
+import projectImage7 from "../assets/project7.png";
+import resume_pdf from '../assets/Ashish-kumar_Resume.pdf'
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
-import { DiJavascript, DiRedis, } from "react-icons/di";
-import { FaNodeJs, FaJsSquare,FaDownload, FaAngleRight } from "react-icons/fa";
+import { DiJavascript, DiRedis, DiGithub, DiGit, DiBootstrap } from "react-icons/di";
+import { FaNodeJs, FaJsSquare, FaDownload, FaAngleRight, FaGit, } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+
+import { p } from "framer-motion/client";
 
 export const NAVIGATION_LINKS = [
     { label: "Home", href: "#home" },
@@ -41,12 +45,36 @@ export const HERO = {
 export const PROJECTS = [
     {
         id: 1,
+        name: "Task Management Tool",
+        description: 'Comming Soon',
+        // "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+        image: projectImage3,
+        githubLink: "https://github.com/user/task-management-tool",
+    },
+    {
+        id: 2,
         name: "Personal Portfolio",
         description:
             "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
         image: projectImage11,
-        githubLink: "",
+        githubLink: "#",
     },
+    {
+        id: 3,
+        name: "Weather App",
+        description:
+            "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and Tailwind CSS.",
+        image: projectImage7,
+        githubLink: "https://tapman-c.vercel.app/",
+    },
+    {
+        id: 4,
+        name: "E-Learning App",
+        description: 'Under Progress',
+        image: projectImage2,
+        githubLink: "https://github.com/user/ecommerce-platform",
+    },
+
     // {
     //     id: 2,
     //     name: "E-Commerce Platform",
@@ -97,9 +125,10 @@ export const BIO = [
     "Currently, I'm focused on mastering Data Structures and Algorithms to enhance my problem-solving abilities and building scalable web applications. My approach to learning is hands-on—I believe in growing through practice and collaboration.",
     "Beyond coding, I thrive in team environments, sharing knowledge, and contributing to tech communities. My goal is to craft impactful digital experiences that not only meet user needs but also inspire innovation",
     <div className=" p-3 ">
-     <span className="Btn  bg-green-600 m-auto sm:m-0 rounded-full font-bold mb-6 p-3   ">
-            <a href={projectImage11}  target="_blank" rel="noreferrer">Resume <FaAngleRight className="svg bottom-2"/></a>
-        </span>
+        <a href={resume_pdf} target="_blank" className="Btn bg-green-600 m-auto sm:m-0 rounded-full font-bold mb-6  ">
+            <p className="w-full" rel="noreferrer">Resume <FaAngleRight className="svg bottom-2" /></p>
+        </a>
+
         <span className="w-full lg:w-1/2  ">
             <a href="tel:+917488708149" className="flex justify-center sm:justify-end mt-16 "><span className="text-green-500 font-normal">Phone : <span>{'\u00A0'}</span>  </span>+91-7488708149</a>
             <a href="mailto:ashishkumar4236@gmail.com" className="flex justify-center sm:justify-end"><span className="text-green-500 font-normal">Email : <span>{'\u00A0'}</span>  </span> ashishkumar4236@gmail.com</a>
@@ -109,16 +138,12 @@ export const BIO = [
 ];
 
 export const SKILLS = [
-    {
-        icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-        name: "React",
-        experience: "80%",
-    },
-    {
-        icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-        name: "Next.js",
-        experience: "70%",
-    },
+
+    // {
+    //     icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
+    //     name: "Next.js",
+    //     experience: "70%",
+    // },
     {
         icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
         name: "MongoDB",
@@ -128,6 +153,11 @@ export const SKILLS = [
         icon: <SiExpress className="text-4xl text-blue-700 lg:text-5xl" />,
         name: "Express",
         experience: "75%",
+    },
+    {
+        icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+        name: "React",
+        experience: "80%",
     },
     {
         icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
@@ -144,6 +174,22 @@ export const SKILLS = [
         name: "Tailwindcss",
         experience: "88%",
     },
+    {
+        icon: <DiGit className="text-4xl text-red-700 lg:text-5xl" />,
+        name: "Git",
+        experience: "70%",
+    },
+    {
+        icon: <DiGithub className="text-4xl text-white lg:text-5xl" />,
+        name: "GitHub",
+        experience: "72%",
+    },
+    {
+        icon: <DiBootstrap className="text-4xl text-purple-700 lg:text-5xl" />,
+        name: "Bootstrap",
+        experience: "87%",
+    },
+
 
 ];
 
@@ -202,12 +248,9 @@ export const SOCIAL_MEDIA_LINKS = [
         href: "https://www.facebook.com/share/1EzhBh6hrg/",
         icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
     },
+
     {
-        href: "https://discord.com/ashishkumar_22",
-        icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
-    },
-    {
-        href: "https://www.instagram.com/ashii_saharan2",
+        href: "https://www.instagram.com/ashii_saharan",
         icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
     },
     {
@@ -215,7 +258,7 @@ export const SOCIAL_MEDIA_LINKS = [
         icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
     },
     {
-        href: "https://github.com/ashishkumar-22",
+        href: "https://github.com/ashishkumar-y",
         icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
     },
     {

@@ -7,7 +7,8 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-// import WorkExprience from './components/WorkExprience'
+
+
 import './style/index.css'
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
         <AboutMe />
         <Skills />
         <Education />
-        {/* <WorkExprience /> */}
+        
         <Projects />
+   
         <ContactForm />
         <Footer />
       </div>

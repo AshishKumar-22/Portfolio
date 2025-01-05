@@ -1,5 +1,5 @@
 import React from 'react'
-import { BIO } from '../Constants'
+import { BIO } from '../constants'
 import { motion } from 'framer-motion';
 
 const AboutMe = () => {

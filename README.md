@@ -20,13 +20,12 @@ Currently, two official plugins are available for React:
 
 ## Folder Structure
 
-```
 my-portfolio/
 ├── node_modules/                  # Installed dependencies
 ├── public/                        # Public static assets (empty for Vite-based projects)
 │   
 ├── src/                           # Source code for React app
-│   ├── assets/                    # Folder for assets like images, svgs, etc.
+│   ├── assets/                    # Folder for assets like images, svg, etc.
 │   ├── components/                # React components for various pages
 │   │   ├── Nav.jsx                # Navigation bar component
 │   │   ├── Footer.jsx             # Footer component
@@ -41,11 +40,46 @@ my-portfolio/
 │   ├── main.jsx                   # Entry point for React app
 ├── package.json                   # Project metadata and dependencies
 └── vite.config.js                 # Vite configuration file
- ```
 
-# Contributions
+
+## Project Setup
+
+### 1. Install Dependencies
+Install the necessary project dependencies:
+
+npm install
+
+### 2. Start the Development Server
+Run the development server:
+
+npm run dev
+
+This will start the project at http://localhost:3000. Open this URL in your browser to view the project.
+
+## ESLint Setup
+This project uses ESLint to maintain clean and consistent code. The default configuration includes basic rules for React.
+
+1. **Install ESLint**
+To set up ESLint, you need to install the following dependencies:
+
+npm install eslint eslint-plugin-react --save-dev
+
+2. **Configure ESLint**
+Create a .eslintrc.json file:
+
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["react"]
+}
+
+3. **Run ESLint**
+You can now run ESLint on your project files:
+
+npx eslint .
+
+## Contributions
 Feel free to open issues and contribute to this project. Pull requests are always welcome!
-
-
-
- 
